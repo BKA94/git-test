@@ -52,9 +52,20 @@ class StaffList extends Component {
       );
     });
     return (
-      <div className="container">
-        <div className="row mt-5">{staff}</div>
-        <div className="row">{this.renderStaff(this.state.selectedStaff)}</div>
+      <div>
+        <div className="d-flex justify-content-evenly">
+          <button className="m-3">1 cột</button>
+          <button className="m-3">2 cột</button>
+          <button className="m-3">3 cột</button>
+          <button className="m-3">4 cột</button>
+          <button className="m-3">6 cột</button>
+        </div>
+        <div className="container">
+          <div className="row mt-5">{staff}</div>
+          <div className="row">
+            {this.renderStaff(this.state.selectedStaff)}
+          </div>
+        </div>
       </div>
     );
   }
