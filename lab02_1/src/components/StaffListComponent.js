@@ -53,7 +53,7 @@ class StaffList extends Component {
     });
     return (
       <div>
-        <div className="d-flex justify-content-evenly">
+        <div style={{ display: "flex", justifyContent: "center" }}>
           <button className="m-3">1 cột</button>
           <button className="m-3">2 cột</button>
           <button className="m-3">3 cột</button>
