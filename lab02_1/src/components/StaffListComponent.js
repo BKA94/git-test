@@ -15,6 +15,10 @@ class StaffList extends Component {
     this.setState({ selectedStaff: staff });
   }
 
+  onColumSelected(col) {
+    this.setState({ defaultClass: col });
+  }
+
   renderStaff(staff) {
     if (staff != null) {
       return (
@@ -54,7 +58,12 @@ class StaffList extends Component {
     return (
       <div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <button className="m-3">1 cột</button>
+          <button
+            className="m-3"
+            onClick={() => this.onColumSelected("col-12")}
+          >
+            1 cột
+          </button>
           <button className="m-3">2 cột</button>
           <button className="m-3">3 cột</button>
           <button className="m-3">4 cột</button>
