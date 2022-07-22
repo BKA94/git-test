@@ -70,7 +70,9 @@ class StaffList extends Component {
           <button className="m-3" onClick={() => this.onColumSelected("col-4")}>
             3 cột
           </button>
-          <button className="m-3">4 cột</button>
+          <button className="m-3" onClick={() => this.onColumSelected("col-3")}>
+            4 cột
+          </button>
           <button className="m-3">6 cột</button>
         </div>
         <div className="container">
