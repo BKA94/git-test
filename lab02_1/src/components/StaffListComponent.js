@@ -64,7 +64,9 @@ class StaffList extends Component {
           >
             1 cột
           </button>
-          <button className="m-3">2 cột</button>
+          <button className="m-3" onClick={() => this.onColumSelected("col-6")}>
+            2 cột
+          </button>
           <button className="m-3">3 cột</button>
           <button className="m-3">4 cột</button>
           <button className="m-3">6 cột</button>
